@@ -102,18 +102,14 @@ public class Intersection
 		}
 
 		// traverse both list in tandem
-		// compare next node
-		while(l1temp != null)
+		// compare next node until we have a collision
+		while(l1temp.next != l2temp.next)
 		{
-			if(l1temp.next == l2temp.next)
-			{
-				return l1temp.next;
-			}
 			l1temp = l1temp.next;
 			l2temp = l2temp.next;
 		}
 
-		return null;		
+		return l1temp.next;		
 	}
 
 	public static ListNode traverseNNodes(ListNode list, int n)
