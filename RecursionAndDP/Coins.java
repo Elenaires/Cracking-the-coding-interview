@@ -37,7 +37,7 @@ public class Coins
 		for(int i = index; i < coins.length; i++)
 		{
 			int coin = coins[i];
-			helper(amount-coin, count, i, dp);
+			helper(amount-coin, count, i);
 		}
 	}*/
 
